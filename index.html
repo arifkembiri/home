@@ -98,7 +98,7 @@
     const websiteTableBody = document.getElementById('websiteTableBody');
     let rowNumber = 0;
 
-    database.ref('/selesai').on('child_added', function (snapshot) {
+    database.ref('/notepad').on('child_added', function (snapshot) {
       const website = snapshot.val();
       const newRow = websiteTableBody.insertRow(0);
       const cellNumber = newRow.insertCell(0);
